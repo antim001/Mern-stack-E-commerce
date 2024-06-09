@@ -1,10 +1,11 @@
-
+import React from 'react';
+import Layout from './../components/Layout/Layout';
 
 const About = () => {
     return (
-        <div title={"About Us-UVX Systems"}>
-            <h1>This is about page </h1>
-        </div>
+        <Layout title={"About-UVX Systems"}>
+            <h1>This is about page</h1>
+        </Layout>
     );
 };
 

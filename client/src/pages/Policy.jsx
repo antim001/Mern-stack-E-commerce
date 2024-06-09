@@ -1,10 +1,11 @@
-
+import React from 'react';
+import Layout from './../components/Layout/Layout';
 
 const Policy = () => {
     return (
-        <div>
-            <h1>This is policy page</h1>
-        </div>
+        <Layout>
+            <h1>Policy page</h1>
+        </Layout>
     );
 };
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Layout from './../../components/Layout/Layout';
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -36,6 +37,7 @@ const Login = () => {
     };
 
     return (
+        <Layout>
         <div className={`hero min-h-screen bg-base-200 flex justify-center items-center transition-opacity ${showForm ? 'opacity-100' : 'opacity-0'}`}>
             <div className="card shadow-md bg-base-100 w-full md:w-1/2 lg:w-1/3 transition-transform transform-gpu duration-500 ease-in-out" style={{ transform: showForm ? 'translateY(0)' : 'translateY(-20px)' }}>
                 <form onSubmit={handleSubmit} className="card-body p-8 space-y-4">
@@ -66,6 +68,7 @@ const Login = () => {
                 </form>
             </div>
         </div>
+        </Layout>
     );
 };
 

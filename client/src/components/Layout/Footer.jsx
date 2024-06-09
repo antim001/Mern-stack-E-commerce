@@ -1,5 +1,5 @@
-import logo from '../assets/logo.png'
-import {Link} from 'react-router-dom'
+import logo from '../../assets/logo.png'
+import {Link} from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="footer p-10 bg-base-200 text-base-content">
@@ -16,8 +16,9 @@ const Footer = () => {
   </nav> 
   <nav>
     <h6 className="footer-title">Company</h6> 
-    <Link to='/about' className="link link-hover">About us</Link>
-    <Link to='/contact' className="link link-hover">Contact</Link>
+  <Link className="link link-hover" to='/about'>  About us</Link>
+  <Link className="link link-hover" to='/contact'> Contact</Link>
+  <Link className="link link-hover" to='/policy'> Policy</Link>
     <a className="link link-hover">Jobs</a>
     <a className="link link-hover">Press kit</a>
   </nav> 

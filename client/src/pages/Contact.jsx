@@ -1,9 +1,11 @@
+import React from 'react';
+import Layout from './../components/Layout/Layout';
 
 const Contact = () => {
     return (
-        <div>
-            <h1>This is Contact page</h1>
-        </div>
+        <Layout title={"Contact-UVX Systems"}>
+            <h1>This is contact page</h1>
+        </Layout>
     );
 };
 
